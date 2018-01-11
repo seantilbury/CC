@@ -1,0 +1,316 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background: #fffaf0;
+}
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1400px;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 0 auto;
+}
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+.header {
+    background: #FFFAF0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+.logo {
+    text-decoration: none;
+    color: #777;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+}
+.savory-crepes {
+    flex: 1;
+    order: 1;
+}
+.sweet-crepes {
+    flex: 1;
+    order: 1;
+}
+.waffles {
+    line-height: 1.6em;
+    background: #fffaf0;
+    color: #664C00;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+.drinks {
+    line-height: 1.6em;
+    background: #fffaf0;
+    color: #664C00;
+    font-size: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+/*text formatting*/
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Tangerine', cursive;
+    color: #664C00;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Tangerine', cursive;
+    color: #664C00;
+}
+h3 {
+    padding-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Tangerine', cursive;
+    color: #664C00;
+}
+/*end text formatting*/
+
+nav > ul {
+    float: right;
+}
+nav > ul > li {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 30px;
+    /*padding for menu*/
+}
+nav > ul li ul li {
+    width: 100%;
+    text-align: left;
+}
+nav ul li:hover {
+    cursor: pointer;
+    position: relative;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li:hover > a {
+    color: #777;
+}
+nav > ul > li > a {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #664C00;
+    font-weight: bold;
+    padding-top: 1em;
+    /*padding on top of menu*/
+    
+    font-family: 'Tangerine', cursive;
+}
+nav > ul > li {
+    float: left;
+}
+nav a {
+    color: grey;
+}
+nav > ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 2000;
+}
+nav > ul li ul li > a {
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-size: 2em;
+}
+[type="checkbox"],
+label {
+    display: none;
+}
+.footer {
+    background: #fffaf0;
+}
+.footer img {
+    padding: 0 1rem 0 1rem
+}
+.main {
+    display: flex;
+    line-height: 1.6em;
+    background: #fffaf0;
+    color: #664C00;
+    font-size: 1em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+.vans-main {
+    margin: 0 auto;
+}
+.van-slider {} .slide {} .contact {
+    width: 100%;
+}
+.contactg-iframe body.ss-base-body {
+    background: #fffaf0!important
+}
+.index-main {
+    display: block;
+    line-height: 1.6em;
+    background: #fffaf0;
+    color: #664C00;
+    font-size: 1em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+.aside-1 {
+    background: #fffaf0;
+}
+.aside-2 {
+    background: #fffaf0;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #664C00;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+}
+.aside-2 a {
+    text-decoration: none;
+    color: #664C00;
+    line-height: 2em
+}
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 auto;
+    }
+}
+@media all and (min-width: 800px) {
+    .main {
+        flex: 1 0px;
+    }
+    .aside-1 {
+        /*background: green;*/
+        
+        max-width: 350px;
+        order: 1;
+    }
+    .main {
+        min-width: 300px;
+        order: 2;
+    }
+    .aside-2 {
+        max-width: 300px;
+        order: 3;
+    }
+    .footer {
+        order: 4;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    label {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+    label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #777;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+    }
+    [type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+    }
+    nav a {
+        color: #777;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        background: #fffaf0;
+        text-indent: 20px;
+    }
+    nav > ul > li {
+        margin-left: 0px;
+    }
+    nav > ul li ul li {
+        display: block;
+        float: none;
+    }
+    nav > ul li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+        float: none;
+    }
+    nav > ul > li > a {
+        font-size: 2em;
+        padding-top: 0em;
+        text-align: center;
+        border: 1px solid
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    img.savory {
+        width: 88%;
+    }
+    img.sweet {
+        width: 88%
+    }
+    img.coffee {
+        width: 90%
+    }
+}
+@media screen and (max-width: 650px) {
+    .main {
+        display: block;
+    }
+}
